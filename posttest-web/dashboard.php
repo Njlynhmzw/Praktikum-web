@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Jika belum login, redirect ke halaman login
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
     exit;
@@ -66,4 +65,5 @@ if (!isset($_SESSION['username'])) {
         <p>&copy; 2025 Wisata Kalimantan Timur</p>
     </footer>
 </body>
+
 </html>

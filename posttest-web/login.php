@@ -7,12 +7,10 @@ if (isset($_SESSION['username'])) {
     exit;
 }
 
-// Proses login jika form disubmit
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'] ?? '';
     $password = $_POST['password'] ?? '';
     
-    // Autentikasi sederhana (biasanya akan query ke database)
     if ($username === 'nou' && $password === 'nou123') {
         $_SESSION['username'] = $username;
         header("Location: dashboard.php");
@@ -69,4 +67,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>&copy; 2025 Wisata Kalimantan Timur</p>
     </footer>
 </body>
+
 </html>

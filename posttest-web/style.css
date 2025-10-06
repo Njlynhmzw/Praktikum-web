@@ -80,9 +80,6 @@ main {
     padding: 20px;
 }
 
-/* ... kode CSS sebelumnya ... */
-
-/* Modal Styling */
 #modal-overlay {
     position: fixed;
     top: 0;
@@ -130,8 +127,6 @@ main {
     margin: 20px auto;
     width: 100%;
 }
-
-/* ... kode CSS lainnya ... */
 .search-box {
     padding: 12px 18px;
     width: 100%;
@@ -274,4 +269,5 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+
 }

@@ -1,6 +1,5 @@
 const wisataCards = document.querySelectorAll(".card");
 
-// Modal styling dipindahkan ke CSS
 const modal = document.createElement("div");
 modal.id = "modal-overlay";
 document.body.appendChild(modal);
@@ -29,7 +28,6 @@ wisataCards.forEach((card) => {
   });
 });
 
-// Fitur pencarian
 const wisataSection = document.getElementById("wisata");
 const searchContainer = document.createElement("div");
 searchContainer.id = "search-container";
@@ -53,4 +51,5 @@ searchBox.addEventListener("input", () => {
       card.classList.add("hide");
     }
   });
+
 });
